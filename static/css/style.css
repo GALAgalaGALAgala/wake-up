@@ -57,10 +57,7 @@ body {
     transition: color 0.1s ease;
     justify-content: center;
     color: var(--main_text_color);
-    /*
-        overflow-x: hidden;
-    */
-
+    overflow-x: hidden;
 }
 #container-loading {
     background: radial-gradient(white, #d8eaff);
