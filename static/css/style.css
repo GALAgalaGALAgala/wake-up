@@ -248,18 +248,37 @@ body {
     border: 0.5px solid #ffffff;
 }
 .news {
-    font-size: 18px;
-    margin-top: 7px;
+    font-size: 22px;
+    margin-top: 5px;
     margin-bottom: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-between;
-    align-items: center;
+    padding: 5px;
+    line-height: 25px; /*行距*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 两列，每列占用1/2的空间 */
+    grid-template-rows: 5px;
+    grid-template-rows: auto,auto; /* 两行，每行占用1/2的空间 */
+    grid-column-gap: 50px;
+    grid-row-gap: 25px;
+    grid-auto-rows: minmax(20px,auto);
 }
-.news-time {
+.times {
+    border: 0px solid black; /* 边框，便于观察布局效果 */
     position: relative;
+    color: #d2c8c8;
 }
+.times a{
+  font-size: ; /* 设置字体大小 */
+  font-weight: ; /* 设置字体加粗 */
+  color: #000000; /* 设置字体颜色 */
+  text-decoration: none; /* 移除下划线 */
+  text-indent:;/* 首行缩进 */
+
+}
+ /* 鼠标悬停时*/
+.times a:hover {
+  font-weight: bold;
+}
+
 .gradientText {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
